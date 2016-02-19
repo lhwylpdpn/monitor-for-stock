@@ -1,0 +1,219 @@
+﻿<html lang="zh-CN" >
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<meta http-equiv="refresh" content="60">
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/highstock.js"></script>
+    <script type="text/javascript" src="js/src/1.js"></script>
+    <script type="text/javascript" src="js/src/2.js"></script>
+    <script type="text/javascript" src="js/theme.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/src/load_json_1.js"></script>
+	<script type="text/javascript" src="js/src/load_json_2.js"></script>
+	<script type="text/javascript" src="js/src/load_json_3.js"></script>
+	<script type="text/javascript" src="js/src/load_json_4.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+  <script>
+    //左侧Javascript代码
+  </script>
+
+<script language="javascript"> 
+function test() 
+{ 
+var objShell = new ActiveXObject("wscript.shell"); 
+objShell.exec("clac_static.py"); 
+objShell = null; 
+} 
+</script> 
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+   
+  </div>
+</nav>
+	<div class="container-fluid" >
+
+			<div class="row">
+			  <div class="col-md-2">
+				  <div  class="panel panel-default">
+				  <div class="panel-heading">嘉盛本期盈利百分比</div>
+				  <div class="panel-body"style="height:90px" id="data1">
+			
+				  </div>
+ 				  </div>
+			  </div>
+			  <div class="col-md-2">
+				  <div  class="panel panel-default">
+				  <div class="panel-heading">嘉盛目前订单总数</div>
+				  <div class="panel-body " style="height:90px" id="data2">
+	
+				  </div>
+ 				  </div>
+
+			  </div>
+			  <div class="col-md-2" >
+	
+			      <div  class="panel panel-default">
+				  <div class="panel-heading">嘉盛 n/p[<h class="progress-bar-success">success</h>/<h class="progress-bar-warning">cover</h>]</div>
+				  <div class="panel-body" style="height:90px">
+				  	<table class="table" id="data3">
+
+					</table>
+				  </div>
+
+ 				  </div>
+			 </div>
+			  <div class="col-md-2">
+				  <div  class="panel panel-default">
+				  <div class="panel-heading">嘉盛日均开单</div>
+				  <div class="panel-body"style="height:90px" id="data6">
+				  </div>
+ 				  </div>
+			  </div>
+ 			 <div class="col-md-2">
+				  <div  class="panel panel-default">
+				  <div class="panel-heading">嘉盛程序正确性</div>
+				  <div class="panel-body " style="height:90px" id="data4" >
+				  <h1>尚未统计</h1>
+				  </div>
+ 				  </div>
+
+			 </div>
+
+			  <div class="col-md-2">
+				  <div  class="panel panel-default">
+				  <div class="panel-heading">lmx程序正确性</div>
+				  <div class="panel-body"style="height:90px" id="data5">
+		 <h1>尚未统计</h1>
+				  </div>
+ 				  </div>
+			  </div>
+
+
+
+
+
+
+		
+			</div>
+
+
+			<div class="row">
+			  <div class="col-md-2">
+				  <div  class="panel panel-default">
+				  <div class="panel-heading">lmx本期盈利百分比</div>
+				  <div class="panel-body"style="height:90px" id="data11">
+			
+				  </div>
+ 				  </div>
+			  </div>
+			  <div class="col-md-2">
+				  <div  class="panel panel-default">
+				  <div class="panel-heading">lmx目前订单总数</div>
+				  <div class="panel-body " style="height:90px" id="data22">
+	
+				  </div>
+ 				  </div>
+
+			  </div>
+			  <div class="col-md-2" >
+	
+			      <div  class="panel panel-default">
+				  <div class="panel-heading">lmx n/p[<h class="progress-bar-success">success</h>/<h class="progress-bar-warning">cover</h>]</div>
+				  <div class="panel-body" style="height:90px">
+				  	<table class="table" id="data33">
+
+					</table>
+				  </div>
+
+ 				  </div>
+			 </div>
+
+ 			 
+			  <div class="col-md-2">
+				  <div  class="panel panel-default">
+				  <div class="panel-heading">lmx日均开单</div>
+				  <div class="panel-body"style="height:90px" id="data66">
+				  </div>
+ 				  </div>
+			  </div>
+
+		
+			</div>
+
+
+
+
+
+
+					<div class="row">
+			  <div class="col-md-12">
+
+
+				<div  class="panel panel-default">
+			  <div class="panel-heading">嘉盛分钟趋势图</div>
+			  <div class="panel-body">
+			   <div id="container" style="height:400px"></div>
+			  </div>
+
+
+ 				 </div>
+  </div>
+</div>
+
+				<div class="row">
+			  <div class="col-md-12">
+
+
+				<div  class="panel panel-default">
+			  <div class="panel-heading">lmx分钟趋势图</div>
+			  <div class="panel-body">
+			   <div id="container2" style="height:400px"></div>
+			  </div>
+
+
+ 				 </div>
+  </div>
+</div>
+
+
+
+<!--<div class="row">
+			  <div class="col-md-12">
+
+
+				<div  class="panel panel-default">
+			  <div class="panel-heading">分品种情况</div>
+			  <div class="panel-body">
+			   					<table class="table table-condensed  table-hover">
+							      <thead>
+							        <tr>
+							          <th>品种</th>
+							          <th>开单数</th>
+							          <th>正常平仓单比例</th>
+							          <th>最大持仓数</th>
+							          <th>正态单持仓时间</th>
+							          <th>补单持仓时间</th>
+							          <th>正态单总盈利</th>
+							          <th>补单总盈利</th>
+							        </tr>
+							      </thead>
+							      <tbody id='data7'>
+							        
+							      </tbody>
+							    </table>
+			  </div>
+
+
+ 				 </div>
+  </div>
+</div>-->
+
+
+</div>
+
+
+</body>
+</html>
