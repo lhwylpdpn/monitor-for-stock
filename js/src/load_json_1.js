@@ -21,11 +21,11 @@ $(function() {
 			
 				//document.getElementById("data1").innerHTML='<h1>'+result.avg_profit*100+'%</h1>'
 				//document.getElementById("data2").innerHTML='<h1>'+result.avg_profit_week*100+'%</h1>'
-				document.getElementById("data3").innerHTML='<div class="progress"><div class="progress-bar progress-bar-success" style="width:'+result.success*100+'%"><span >'+result.success*100+'%</span></div><div class="progress-bar progress-bar-warning progress-bar-striped" style="width: '+(1-result.success)*100+'%"><span >'+(1-result.success)*100+'%</span></div></div><div class="progress"><div class="progress-bar progress-bar-success" style="width:'+result.success_profit*100+'%"><span>'+result.success_profit*100+'%</span></div><div class="progress-bar progress-bar-warning progress-bar-striped" style="width:'+(1-result.success_profit)*100+'%"><span >'+(1-result.success_profit)*100+'%</span></div></div>'
-				document.getElementById("data4").innerHTML='<h1>'+result.jiasheng_status+'</h1>'
-				document.getElementById("data5").innerHTML='<h1>'+result.lmx_status+'</h1>'
-				document.getElementById("data6").innerHTML='<h1>'+result.avg_num+'</h1>'
-				document.getElementById("data7").innerHTML=result.table1
+				document.getElementById("data1_1").innerHTML='<div class="progress"><div class="progress-bar progress-bar-success" style="width:'+result.success*100+'%"><span >'+result.success*100+'%</span></div><div class="progress-bar progress-bar-warning progress-bar-striped" style="width: '+(1-result.success)*100+'%"><span >'+(1-result.success)*100+'%</span></div></div><div class="progress"><div class="progress-bar progress-bar-success" style="width:'+result.success_profit*100+'%"><span>'+result.success_profit*100+'%</span></div><div class="progress-bar progress-bar-warning progress-bar-striped" style="width:'+(1-result.success_profit)*100+'%"><span >'+(1-result.success_profit)*100+'%</span></div></div>'
+				document.getElementById("data1_2").innerHTML='<h1>'+result.jiasheng_status+'</h1>'
+				document.getElementById("data1_3").innerHTML='<h1>'+result.lmx_status+'</h1>'
+				document.getElementById("data1_4").innerHTML='<h1>'+result.avg_num+'</h1>'
+				document.getElementById("data1_5").innerHTML=result.table1
 
 //"                <a href="#" class="list-group-item list-group-item-success">日常生活支出<span class="badge">11500</span><span class="badge">11500</span></a>
  //               <a href="#" class="list-group-item list-group-item-info">电费余额  <span class="badge">532.5</span></a>
