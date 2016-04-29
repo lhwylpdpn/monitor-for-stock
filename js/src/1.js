@@ -55,7 +55,7 @@ $(function () {
 
     $.each(names, function (i, name) {
 
-        $.getJSON('EB3C3B239AFB8B62B7EC3451D269EB1E/MQL4/Files/json/' + name.toLowerCase() + '.json',    function (data) {
+        $.getJSON('50CA3DFB510CC5A8F28B48D1BF2A5702/MQL4/Files/json/' + name.toLowerCase() + '.json',    function (data) {
 
             seriesOptions[i] = {
                 name: name,

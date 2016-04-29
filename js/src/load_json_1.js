@@ -4,7 +4,7 @@ $(function() {
 		seriesCounter = 0,
 		names = ['static'];
 	
-	var path = "EB3C3B239AFB8B62B7EC3451D269EB1E/MQL4/Files/json/";
+	var path = "50CA3DFB510CC5A8F28B48D1BF2A5702/MQL4/Files/json/";
 	$.each(names, function(i, name) {
 	
 		$.getJSON(path+ name.toLowerCase() +'.json',	function(result) {
